@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /* 강사님이 가르쳐주신거로 집가서 다시 만들어보겠습니다 */
+
+    *{margin:0; padding:0;}
+    .bigimg{
+      width: 100vw;
+      height: 100vh;
+      background-image: url(https://src.hidoc.co.kr/image/lib/2019/8/29/20190829162318578_0.jpg);
+      background-size: cover;
+      background-repeat: repeat;
+    }
+    
+    .top{
+      width: 100vw;
+      height: 60vh;
+      display: flex;
+    }
+    
+    .topleft{
+      width: 30vw;
+      height: 60vh;
+    }
+
+    .topleft>div:nth-child(1){
+      width: 30vw;
+      height: 20vh;
+    }
+
+    .topleft>div:nth-child(2){
+      width: 30vw;
+      height: 40vh;
+      display: flex;
+    }
+
+    .topleft>div:nth-child(2)>div:nth-child(1){
+      width: 10vw;
+      height: 40vh;
+    }
+    
+    .topleft>div:nth-child(2)>div:nth-child(1)>div:nth-child(1){
+      width: 10vw;
+      height: 20vh;
+    }
+
+    .topleft>div:nth-child(2)>div:nth-child(1)>div:nth-child(2){
+      width: 10vw;
+      height: 20vh;
+      background-color: rgba(0,0,0,0.7)
+    }
+
+    .topleft>div:nth-child(2)>div:nth-child(2){
+      width: 20vw;
+      height: 40vh;
+      background-image: url(https://t1.daumcdn.net/cfile/tistory/992E75385AF444CE2F);
+      border-radius: 20px 20px 20px 20px;
+    }
+
+
+    .topright{
+      width: 70vw;
+      height: 60vh;
+    }
+    .topright>div:nth-child(1){
+      width: 70vw;
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color:rgba(255, 255, 255, 0.5);
+      font-size: 50px;
+    }
+    
+    .topright>div:nth-child(2){
+      width: 70vw;
+      height: 20vh;
+      background-color:rgba(0,0,0,0.7)
+    }
+
+    .topright>div:nth-child(2)>div:nth-child(1){
+      width: 50vw;
+      height: 20vh;
+    }
+
+    .topright>div:nth-child(2)>div:nth-child(1)>div:nth-child(1){
+      width: 50vw;
+      height: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+
+    .topright>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div{
+      width: 5vw;
+      height: 5vh;
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+    }
+
+    .topright>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div>div{
+      width: 0.5vw;
+      height: 0.5vw;
+      border: 1px solid black;
+      border-radius: 50%;
+      background-color: white;
+    }
+
+    .topright>div:nth-child(2)>div:nth-child(1)>div:nth-child(2){
+      width: 50vw;
+      height: 15vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .topright>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>div{
+      width: 40vw;
+      height: 10vh;
+    }
+
+    .bottom{
+      width: 100vw;
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      background-color:rgba(0,0,0,0.7)
+    }
+    .bottom>div{
+      width: 80vw;
+      height: 20vh;
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+    }
+    .bottom>div>div:nth-child(1){
+      width: 70vw;
+      height: 0.5vh;
+      background-color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="bigimg">
+
+    <div class="top">
+
+      <div class="topleft">
+        <div></div>
+        
+        <div>
+          <div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <div></div>
+        </div>
+      </div>
+
+      <div class="topright">
+        
+        <div>
+          <div><h1>lorem closure</h1></div>
+        </div>
+        
+        <div>
+
+          <div>
+
+            <div>
+              <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+               </div> 
+            </div>
+
+            <div>
+              <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ducimus dolorem voluptatibus obcaecati dolorum laborum nemo ipsa ad! Expedita quod consequuntur quas harum dicta quo beatae architecto iste fugit aliquam?idunt ducimus dolorem voluptatibus obcaecati dolorum laborum nemo ipsa ad! Expedita quod consequuntur quas harum dicta quo beatae architecto iste fugit aliqua
+                </div>
+              </div>
+          
+          </div>
+
+          <div></div>
+
+        </div>
+
+      </div>
+
+      
+      
+
+    </div>
+
+    <div class="bottom">
+      <div>
+        <div></div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error adipisci molestias dignissimos deleniti officia voluptatem nesciunt commodi doloremque repellat neque minima, amet architecto, quaerat odio vero praesentium, culpa recusandae quas?
+        Placeat, porro dolor a numquam, unde eveniet, explicabo esse sunt ipsa velit veniam nemo voluptates! Illum rerum blanditiis, doloremque nostrum quo quidem minima minus est saepe iure nobis temporibus aliquid!
+        Harum voluptatibus placeat optio similique magnam aspernatur error ab aliquid, dolores labore eligendi eveniet deleniti nihil cum facere animi? Quis, aliquam. Non temporibus at doloribus id sequi doloremque ex commodi?
+        Magni, maxime reprehenderit. Architecto omnis eos deleniti amet iusto totam, autem error aspernatur laudantium praesentium tenetur veritatis, sint fugit, asperiores dignissimos culpa quidem. Mollitia illo ea atque dicta debitis adipisci?
+        Vel necessitatibus, tempore consequuntur nostrum ex error eligendi dignissimos non ad incidunt unde quasi ullam sequi. Iusto eius neque odit debitis, deleniti, eaque quisquam labore officia omnis dolor laudantium possimus?</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

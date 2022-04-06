@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .table{
+      width: 1920px;
+      height: 1080px;
+      background-color: lightgreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* 핸드폰 */
+    .iphone{
+      width: 428px;
+      height: 926px;
+      background-color:black;
+      border: 2px solid black;
+      border-radius: 30px 30px 30px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .display{
+      width: 415px;
+      height: 900px;
+      background-color: white;
+      border-radius: 30px 30px 30px 30px;
+      display: flex;
+      flex-direction: column;
+
+
+    }
+    .noch{
+      width: 415px;
+      height: 30px;
+      border-radius: 30px 30px 0px 0px;
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+    }
+    .noch>div:nth-child(1){
+      width: 70px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .noch>div:nth-child(2){
+      width: 200px;
+      height: 30px;
+      background-color: black;
+      border-radius: 0px 0px 30px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .noch>div:nth-child(2)>div{
+      width: 70px;
+      height: 8px;
+      background-color: gray;
+      border-radius: 30px 30px 30px 30px;
+    }
+    
+    .header{
+      width: 415px;
+      height: 120px;
+
+    }
+
+    .header>div:nth-child(1){
+      width: auto;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(168, 31, 31);
+    }
+
+    .header>div:nth-child(2){
+      width: auto;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:rgba(0,0,0,0.9);
+    }
+
+    .header>div:nth-child(2)>div{
+      width: 300px;
+      height: 45px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style-type: none;
+      background-color: rgb(168,31,31);
+      color: gold;
+      border-radius: 20px 20px 20px 20px;
+    }
+
+    .main{
+      width: 415px;
+      height: 710px;
+      display: flex;
+      background-color:rgba(0,0,0,0.9);
+
+    } 
+    /* 메인 왼쪽부분 */
+    .left{
+      width: 110px;
+      height: 710px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(168,31,31);
+      border-radius: 20px 20px 20px 20px;
+      
+
+      
+    }
+    .left>div{
+      width: 90px;
+      height: 90px;
+      border: 1px solid black;
+      
+    }
+
+    .left>div:nth-child(1){
+      background-image:url(https://img-cf.kurly.com/shop/data/goodsview/20201012/gv10000126356_1.jpg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px 20px 20px 20px;
+    }
+
+    .left>div:nth-child(2){
+      background-image: url(https://www.menutong.com/data/editor/2108/8f74d095dd37b0949f0958de31ac5ecf_1630308996_7593.jpg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px 20px 20px 20px;
+
+    }
+    .left>div:nth-child(3){
+      background-image: url(https://cdn.crowdpic.net/detail-thumb/thumb_d_E8713DEDB7067CF98E30AA6683D7FE29.jpg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px 20px 20px 20px;
+    }
+
+    .left>div:nth-child(4){
+      background-image: url(https://static.hubzum.zumst.com/hubzum/2021/03/30/10/b61b47be35b84de5994b6d68485c9f51_640x480c.jpg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px 20px 20px 20px;
+
+    }
+    .left>div:nth-child(5){
+      background-image: url(https://cdn.clien.net/web/api/file/F01/10737123/60c079d2987fd5.jpg?w=780&h=30000);
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px 20px 20px 20px;
+
+    }
+
+    .left>div:nth-child(6){
+      background-image: url(https://t1.daumcdn.net/cfile/tistory/194EB54A4EFA1AE314);
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px 20px 20px 20px;
+
+    }
+    /* 메인 오른쪽 부분 */
+    .right{
+      width: 305px;
+      height: 710px;
+
+    }
+    .right>div:nth-child(1){
+      width: 305px;
+      height: 355px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+
+    }
+    .right>div:nth-child(1)>div{
+      width: 250px;
+      height: 250px;
+      border: 1px solid black;
+      border-radius: 30px 30px 30px 30px;
+      background-image: url(https://www.menutong.com/data/editor/2108/8f74d095dd37b0949f0958de31ac5ecf_1630308996_7593.jpg);
+      background-size: cover;
+      background-position: center;
+
+
+    }
+    .right>div:nth-child(2){
+      width: 305px;
+      height: 355px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .right>div:nth-child(2)>div:nth-child(1){
+      width: 200px;
+      height: 30px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 30px 30px 30px 30px;
+      background-color: rgb(168,31,31);
+      color: gold;
+    }
+    
+    .right>div:nth-child(2)>div:nth-child(2){
+      width: 250px;
+      height: 170px;
+      border-radius: 20px 20px 20px 20px;
+      color:rgba(255,210,0,0.8);
+    }
+
+    .right>div:nth-child(2)>div:nth-child(3){
+      width: 200px;
+      height: 30px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .right>div:nth-child(2)>div:nth-child(3)>div{
+      width: 20px;
+      height: 20px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px 5px 5px 5px;
+      background-color: rgb(168,31,31);
+      color:gold;
+      font-weight: bold;
+
+
+    }
+    
+    .right>div:nth-child(2)>div:nth-child(4){
+      width: 100px;
+      height: 50px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 13px 13px 13px 13px;
+      background-color: rgb(168,31,31);
+      color:gold;
+      font-weight: bold;
+    }
+
+    .bottom{
+      width: 415px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:rgba(0,0,0,0.9);
+
+    }
+
+    .bottom>div{
+      width: 200px;
+      height: 5px;
+      background-color: black;
+      border-radius: 30px 30px 30px 30px;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="table">
+    <div class="iphone">
+      <div class="display">
+        <!-- m자탈모 -->
+        <div class="noch">
+          <div>12:00</div>
+          <div>
+            <div></div>
+          </div>
+        <div>WIFi-zone</div>
+      </div>
+
+          <!-- 머리부분 -->
+      <div class="header">
+
+        <div>
+          <div></div>
+          <div>햄버거</div>
+        </div>
+
+        <div>
+          <div>
+            <li>식사류</li>
+            <li>튀김요리</li>
+            <li>볶음요리</li>
+            <li>주류/음료</li>
+          </div>
+        </div>
+
+      </div>
+
+            <!-- 몸통부분 -->
+      <div class="main">
+        <div class="left">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        
+        <div class="right">
+          <!-- 오른쪽위  -->
+          <div>
+            <div></div>
+          </div>
+          <!-- 오른쪽밑 -->
+          <div>
+            <div>문어짬뽕</div>
+
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis culpa, distinctio nesciunt natus veritatis commodi temporibus ex deleniti dolore, blanditiis quam, illum numquam nisi qui repudiandae nostrum voluptates delectus accusamus!</div>
+
+            <div>
+              <div>-</div>
+              <div>1</div>
+              <div>+</div>
+            </div>
+
+            <div>결제</div>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+      <div class="bottom">
+        <div></div>
+      </div>
+    </div>
+  </div>
+</html>
